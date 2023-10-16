@@ -20,7 +20,7 @@ mongoose
     console.log(
       `************ Database: ${process.env.DB_NAME} *************\n`
     );
-    console.log(`******* Server started at port ${process.env.PORT} ********`);
+    console.log(`******* Server started at port ${process.env.PORT || "3000"} ********`);
   })
   .catch((error) => {
     console.error("!! Error connecting to MongoDB Atlas !!");
