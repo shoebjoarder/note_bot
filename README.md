@@ -87,7 +87,7 @@ Clone the repository by clicking the green colored `Code` button and then click 
 - Create a new account in OpenAI and get your API key from [here](https://beta.openai.com/)
 
   - Once logged in, click on your name in the top right corner and select `View API keys`
-  - Click on the button `Create a new secret key`. Give the key a name to the key and then copy it to your clipboard
+  - Click on the button `Create a new secret key`. Give a name to the key and then copy it to your clipboard
   - In the `backend` directory, open `.env` file. Paste the API key between the quotation marks in the `OPENAI_API_KEY` variable
 
 - To install Node packages, enter the following command in your command prompt or terminal (only once):
