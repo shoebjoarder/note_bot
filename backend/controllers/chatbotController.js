@@ -1,10 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const router = express.Router();
 
 router.post("/", async (req, res, next) => {
   try {
     const { message } = req.body;
-
     // Make a request to the ChatGPT API
 
     // Create an array to hold both user and ChatGPT messages
@@ -17,7 +17,7 @@ router.post("/", async (req, res, next) => {
       const { Configuration, OpenAIApi } = require("openai");
 
       const configuration = new Configuration({
-        apiKey: "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",
+        apiKey: process.env.OPENAI_API_KEY,
       });
       const openai = new OpenAIApi(configuration);
 
